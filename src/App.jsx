@@ -1,16 +1,16 @@
-import Post from "./Components/Post"
+import Aside from "./Components/Aside";
+import MainContent from "./Components/MainContent";
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
-
   return (
-    <>
-    <div className="bg-[#0B0B0B] text-white h-screen flex items-center justify-center">
-      <Post/>
-
-   </div>
-    
-    </>
-  )
+    <Router>
+      <div className="bg-[#0B0B0B] text-white min-h-screen flex">
+        <Aside />
+        <MainContent />
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
