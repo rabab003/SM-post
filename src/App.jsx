@@ -9,6 +9,7 @@ import Messages from "./Components/Pages/Messages"
 import Notifications from "./Components/Pages/Notifications"
 import Profile from "./Components/Pages/Profile"
 import Reels from "./Components/Pages/Reels"
+import NotFound from "./Components/Pages/NotFound";
 
 
 
@@ -30,12 +31,12 @@ function App() {
       <Route path="/notifications" element={<Notifications/>}/>
       <Route path="/profile" element={<Profile/>}/>
       <Route path="/reels" element={<Reels/>}/>
+      <Route path="*" element={<NotFound/>}/>
 
     </Routes>    
 
       </div>
 
-  
     </>
 
 
