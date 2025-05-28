@@ -6,7 +6,7 @@ export default function Aside() {
   return (
     <>
     
-    <div className='w-1/6 h-screen px-5 pt-10 border-r-[1px] border-[#282828] sticky top-0 '>
+    <div className='w-1/6 hidden md:flex md:flex-col h-screen px-5 pt-10 border-r-[1px] border-[#282828] sticky top-0 '>
       <img src={logo} className='w-32' alt="" />
       <div>
         <ul className='py-5'>
