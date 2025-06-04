@@ -1,11 +1,12 @@
-import React from 'react'
-import PostsList from './PostsList'
+import React from 'react';
+import PostsList from './PostsList';
 
 function Explore() {
   return (
-    <div className=''>
+    <div className='container px-4 py-6 mx-auto'>
       <PostsList/>
-    </div>  )
+    </div>
+  );
 }
 
-export default Explore 
+export default React.memo(Explore);
